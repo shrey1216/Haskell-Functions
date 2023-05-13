@@ -5,6 +5,7 @@ import Data.Char
 import Data.Maybe
 import Data.List
 
+--Encoded alphabet for cypher
 alphabet = [['A'],['B'],['C'],['D'],['E'],['F'],['G'],['H'],['I'],['J'],['K'],['L'],['M'],['N'],['O'],['P'],['Q'],['R'],['S'],['T'],['U'],['V'],['W'],['X'],['Y'],['Z']]
 
 buildKey :: [Int] -> [Char]
@@ -111,6 +112,7 @@ giveIndex a (x:xs) n
 fromDigits = foldl addDigit 0
    where addDigit num d = 10*num + d
 
+--to string 
 main :: IO ()
 main = do
     putStrLn $ "Generated Key: " ++ show (generateKey)
