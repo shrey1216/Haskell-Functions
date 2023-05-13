@@ -293,7 +293,8 @@ class MonoalphabeticCipherTest(unittest.TestCase):
         else: 
             print('Successfully passed test 12 of generating a key')
             
-            
+
+    #Error testing 
         
         
     def test_encrypt(self):
